@@ -57,8 +57,15 @@ Here's a basic outline of how to implement a `Difference-in-Differences` model i
 The dataset is adapted from the dataset in [Card and Krueger (1994)](https://davidcard.berkeley.edu/papers/njmin-aer.pdf), which estimates the causal effect of an increase in the state minimum wage on the employment. 
 
 - On April 1, 1992, New Jersey (`NJ`) raised the state minimum wage from 4.25 USD to 5.05 USD while the minimum wage in Pennsylvania (`PA`) stays the same at 4.25 USD. 
-- Data about employment in fast-food restaurants in `NJ` and `PA` were collected in `February 1992` and in `November 1992`. 
+- Data about employment in fast-food restaurants in `NJ` and `PA` were collected in `February 1992` and in `November 1992`.
 - 384 restaurants in total after removing null values.
 
 -  - `state` is `0 for the control group` (PA) and `1 for the treatment group` (NJ).
 -  - `time` is `0 for before` (i.e., before April 1, 1992) and `1 for after` (i.e., after April 1, 1992).
+ 
+## Usage
+Install required libraries by running this-
+
+```bash
+pip install -r requirements.txt
+```
